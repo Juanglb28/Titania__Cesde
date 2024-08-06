@@ -4,8 +4,8 @@ import com.example.coctelesherbario.exception.custom.CocktailException;
 
 public class CocktailValidation {
 
-    public static void idValidation(int id) throws Exception{
-        if (id <= 0){
+    public static void idValidation(int id) throws Exception {
+        if (id <= 0) {
             throw new CocktailException("The id cannot be less than 0");
         }
         String idString = Integer.toString(id);

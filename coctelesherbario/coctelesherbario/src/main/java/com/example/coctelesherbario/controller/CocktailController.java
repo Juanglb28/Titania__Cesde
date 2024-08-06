@@ -17,7 +17,7 @@ public class CocktailController {
 
     @CrossOrigin(origins = "http://127.0.0.1:5500")
     @GetMapping("/{id}")
-    public ResponseEntity<CocktailDTO> getCocktail(@PathVariable int id){
+    public ResponseEntity<CocktailDTO> getCocktail(@PathVariable int id) {
         try {
             CocktailValidation.idValidation(id);
             CocktailDTO cocktailDTO = cocktailService.cocktailDTO(id);
